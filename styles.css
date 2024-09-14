@@ -1,171 +1,71 @@
-#hero {
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 150px 0;
-  }
-  
-  #hero h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    animation: fadeIn 1s ease-in;
-  }
-  
-  #hero .btn {
-    margin-top: 20px;
-    padding: 10px 30px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary {
-    background-color: #00adb5;
-  }
-  
-  .btn-primary:hover {
-    background-color: #00959c;
-  }
-  
-  .btn-secondary {
-    background-color: #ff5722;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  #about {
-    padding: 100px 0;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  #about .skills-grid {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-  
-  .skill h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .progress-bar {
-    background-color: #ddd;
-    height: 10px;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  
-  .progress {
-    background-color: #00adb5;
-    height: 100%;
-  }
+}
 
-  #projects {
-    padding: 100px 0;
-    background-color: white;
-  }
-  
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .project-card {
-    background-color: #fefefe;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .project-card h3 {
-    font-size: 1.5rem;
-    padding: 10px;
-  }
-  
-  .project-card p {
-    padding: 10px;
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .project-card .btn {
-    background-color: #00adb5;
-    padding: 10px 20px;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    color: white;
-    display: block;
-    margin: 10px auto;
-  }
+}
 
-  #experience {
-    padding: 100px 0;
-    background-color: #f4f4f4;
-  }
-  
-  .timeline {
-    border-left: 4px solid #00adb5;
-    padding-left: 30px;
-  }
-  
-  .timeline-event {
-    margin-bottom: 40px;
-  }
-  
-  .timeline-event h3 {
-    font-size: 1.5rem;
-  }
-  
-  .timeline-event span {
-    color: #666;
-  }
-  
-  .timeline-event p {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  #contact {
-    padding: 100px 0;
-    background-color: #00adb5;
-    color: white;
-    text-align: center;
-  }
-  
-  #contact input, #contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  #contact .btn {
-    background-color: #ff5722;
-    padding: 10px 30px;
-    color: white;
-    border-radius: 30px;
-  }
-  
-  .social-links a {
-    color: white;
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0.5rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
     margin: 0 10px;
-    font-size: 2rem;
-  }
-  
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
